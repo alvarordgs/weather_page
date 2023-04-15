@@ -10,20 +10,73 @@
 </head>
 
 <body class="bg-neutral-700 w-full h-screen flex justify-center items-center">
-    <main class="w-10/12 h-4/5 bg-neutral-800 rounded-lg flex flex-col p-4">
-        <div class="w-full p-2 text-lg ">
+    <main class="w-fit  bg-neutral-800 rounded-lg flex flex-col p-6">
+        <div class="w-full p-2 text-lg mb-4">
             <label for="city" class="text-neutral-300 mr-2">Your city:</label>
             <select name="city" id="city">
                 <option value="URA">Uberaba</option>
             </select>
         </div>
-        <div class="flex gap-2">
-            <div class="p-2">
-                23 graus
+        <div class="flex gap-2 ">
+            <div class="p-4 bg-neutral-900 rounded-lg flex flex-col items-center gap-6">
+                <span data-date="atual" class="text-neutral-400 mb-8">5:05 PM, Mon, Nov 23, 2020</span>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/weather_icons/64x64/night/143.png" class="max-w-full">
+                    <div class="flex gap-1 text-neutral-300">
+                        <p date-weather="temperature" class="text-6xl font-bold">22</p>
+                        <span class="text-md">&#8451;</span>
+                    </div>
+                </div>
+                <h3 date-weather="description" class="text-xl text-neutral-300 font-semibold mb-6">Nublado</h3>
+                <div class="flex gap-2 text-center">
+                    <div class="bg-neutral-800 p-4 rounded-md">
+                        <span class="text-neutral-400 text-sm mb-1 block">Úmidade</span>
+                        <p class="text-neutral-300 text-lg">45%</p>
+                    </div>
+                    <div class="bg-neutral-800 p-4 rounded-md">
+                        <span class="text-neutral-400 text-sm mb-1 block">Vel. do vento</span>
+                        <p class="text-neutral-300 text-lg">12 km/h</p>
+                    </div>
+                </div>
             </div>
-            <div class="p-2">
-                1 grau, 2 graus
-            </div>
+            <ul class="flex gap-4 bg-neutral-900 rounded-lg p-4">
+                <li class="bg-neutral-800 p-4 rounded-md flex justify-between flex-col items-center ">
+                    <span data-card="date" class="text-neutral-300 font-bold text-sm">Today</span>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="./assets/weather_icons/64x64/night/143.png" alt="">
+                        <span date-card="temperature" class="text-xl text-neutral-300 font-bold">22 &#8451;</span>
+                    </div>
+                    <h3 date-card="description" class="text-md font-semibold text-neutral-300">Nublado</h3>
+                    <div class="p-4 bg-neutral-700 rounded-md flex flex-col items-center gap-2">
+                        <span class="text-sm text-neutral-400">Úmidade</span>
+                        <p class="text-neutral-300 font-semibold">45%</p>
+                    </div>
+                </li>
+                <li class="bg-neutral-800 p-4 rounded-md flex justify-between flex-col items-center ">
+                    <span data-card="date" class="text-neutral-300 font-bold text-sm">Nov 25</span>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="./assets/weather_icons/64x64/night/143.png" alt="">
+                        <span date-card="temperature" class="text-xl text-neutral-300 font-bold">22 &#8451;</span>
+                    </div>
+                    <h3 date-card="description" class="text-md font-semibold text-neutral-300">Nublado</h3>
+                    <div class="p-4 bg-neutral-700 rounded-md flex flex-col items-center gap-2">
+                        <span class="text-sm text-neutral-400">Úmidade</span>
+                        <p class="text-neutral-300 font-semibold">45%</p>
+                    </div>
+                </li>
+                <li class="bg-neutral-800 p-4 rounded-md flex justify-between flex-col items-center ">
+                    <span data-card="date" class="text-neutral-300 font-bold text-sm">Nov 26</span>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="./assets/weather_icons/64x64/night/143.png" alt="">
+                        <span date-card="temperature" class="text-xl text-neutral-300 font-bold">22 &#8451;</span>
+                    </div>
+                    <h3 date-card="description" class="text-md font-semibold text-neutral-300">Nublado</h3>
+                    <div class="p-4 bg-neutral-700 rounded-md flex flex-col items-center gap-2">
+                        <span class="text-sm text-neutral-400">Úmidade</span>
+                        <p class="text-neutral-300 font-semibold">45%</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </main>
 </body>
