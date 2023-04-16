@@ -9,33 +9,37 @@
     <title>Weather page</title>
 </head>
 
-<body class="bg-neutral-700 w-full h-screen flex justify-center items-center">
+<body class="bg-neutral-700 w-full h-screen flex justify-center items-center ">
     <main class="w-fit  bg-neutral-800 rounded-lg flex flex-col p-6">
         <div class="w-full p-2 text-lg mb-4">
             <label for="city" class="text-neutral-300 mr-2">Your city:</label>
-            <select name="city" id="city">
-                <option value="URA">Uberaba</option>
+            <select name="city" data-city class="text-center rounded-md">
+                <option value="London" selected>London</option>
+                <option value="New York">New York</option>
+                <option value="Brasília">Brasília</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Paris">Paris</option>
             </select>
         </div>
         <div class="flex gap-2 ">
             <div class="p-4 bg-neutral-900 rounded-lg flex flex-col items-center gap-6">
-                <span data-date="atual" class="text-neutral-400 mb-8">5:05 PM, Mon, Nov 23, 2020</span>
+                <span data-weather="date" class="text-neutral-400 mb-8">5:05 PM, Mon, Nov 23, 2020</span>
                 <div class="flex items-center gap-4">
-                    <img src="./assets/weather_icons/64x64/night/143.png" class="max-w-full">
+                    <img src="./assets/weather_icons/64x64/night/143.png" class="w-full" data-weather="img">
                     <div class="flex gap-1 text-neutral-300">
-                        <p date-weather="temperature" class="text-6xl font-bold">22</p>
+                        <p data-weather="temperature" class="text-6xl font-bold">22</p>
                         <span class="text-md">&#8451;</span>
                     </div>
                 </div>
-                <h3 date-weather="description" class="text-xl text-neutral-300 font-semibold mb-6">Nublado</h3>
+                <h3 data-weather="description" class="text-xl text-neutral-300 font-semibold mb-6 max-w-[180px] text-center">Nublado</h3>
                 <div class="flex gap-2 text-center">
                     <div class="bg-neutral-800 p-4 rounded-md">
                         <span class="text-neutral-400 text-sm mb-1 block">Úmidade</span>
-                        <p class="text-neutral-300 text-lg">45%</p>
+                        <p class="text-neutral-300 text-lg" data-weather="humidity">45%</p>
                     </div>
                     <div class="bg-neutral-800 p-4 rounded-md">
                         <span class="text-neutral-400 text-sm mb-1 block">Vel. do vento</span>
-                        <p class="text-neutral-300 text-lg">12 km/h</p>
+                        <p class="text-neutral-300 text-lg" data-weather="wind">12 km/h</p>
                     </div>
                 </div>
             </div>
@@ -79,6 +83,7 @@
             </ul>
         </div>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
