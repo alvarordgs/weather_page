@@ -1,4 +1,4 @@
-async function searchWeather(city) {
+async function searchWeather(city="London") {
     try {
         const getWeather = await fetch(`http://api.weatherapi.com/v1/current.json?key=c0bb6d739fcf4c76880232004231304&q=${city}&aqi=no`)
         const getWeatherData = await getWeather.json();
@@ -35,5 +35,7 @@ function fillWeather(data) {
     imgElement.setAttribute('src', './assets/weather_icons/64x64/' + iconPath)
 }
 
+
+searchWeather();
 const inputCity = document.querySelector('[data-city]');
 inputCity.addEventListener('change', () => searchWeather(inputCity.value))
