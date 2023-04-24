@@ -565,8 +565,16 @@ video {
   width: 1.5rem;
 }
 
+.min-w-\[180px\] {
+  min-width: 180px;
+}
+
 .max-w-\[180px\] {
   max-width: 180px;
+}
+
+.max-w-\[120px\] {
+  max-width: 120px;
 }
 
 .flex-col {
@@ -603,6 +611,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded-lg {
